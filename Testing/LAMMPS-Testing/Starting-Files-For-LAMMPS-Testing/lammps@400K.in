@@ -1,0 +1,27 @@
+log log.lammps
+
+units	metal
+atom_style atomic
+newton on
+
+read_data <structure_name>.data
+
+pair_style	flare
+pair_coeff	* * lmp.flare
+
+compute unc all flare/std/atom L_inv_lmp.flare sparse_desc_lmp.flare
+compute MaxUnc all reduce max c_unc
+
+mass            1 196.97
+mass            2 1.00
+
+min_style cg
+minimize 1.0e-4 1.0e-6 100 1000
+
+velocity all create 400.0 4928459 rot yes dist gaussian
+fix 1 all nvt temp 400 400 $(100.0*dt)
+dump dump_all all custom 10 output.dump id type x y z fx fy fz c_unc
+thermo 10
+thermo_style custom step temp pe etotal press vol c_MaxUnc
+
+run 100000
