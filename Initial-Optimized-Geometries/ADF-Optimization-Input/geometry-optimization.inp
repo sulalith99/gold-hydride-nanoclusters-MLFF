@@ -1,0 +1,32 @@
+System
+  ATOMS
+    @include <XYZ_coordinates_along_with_the_structure_directory>
+  END
+  CHARGE 0.0
+END
+
+Task GeometryOptimization
+
+GeometryOptimization
+  Convergence
+     Energy 5e-5
+     Gradients 1e-4
+  End
+  MaxIterations 500
+END
+
+Engine ADF
+  Basis
+    type TZP
+    core none
+  End
+  scf
+    Converge 1e-8
+  end
+  XC
+    GGA BP86
+  End
+  Integration
+    accint 6.0
+  End
+EndEngine
