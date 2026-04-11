@@ -10,9 +10,7 @@ Machine learning force field for gold hydride nanoclusters
 └── Testing/
 ```
 
-> ⚠️ **Note:** The trained MLFF model (`MLFF-OTC-4-Model/`) is archived on OSF:**<a href="https://osf.io/58emp/overview?view_only=8a98b807cf5742a1a25b44badea07e1a" target="_blank">OSF Repository</a>**
->
-> **<a href="https://osf.io/58emp/overview?view_only=8a98b807cf5742a1a25b44badea07e1a" target="_blank"> ** **OSF Repository</a>** **[OSF Repository](https://osf.io/58emp/overview?view_only=8a98b807cf5742a1a25b44badea07e1a)**
+> ⚠️ **Note:** The trained MLFF model (`MLFF-OTC-4-Model/`) is archived on OSF: **<a href="https://osf.io/58emp/overview?view_only=8a98b807cf5742a1a25b44badea07e1a" target="_blank">OSF Repository</a>**
 
 ### `Initial-Optimized-Geometries/`
 ADF optimization input files and optimized structures for all gold-hydride nanoclusters.
