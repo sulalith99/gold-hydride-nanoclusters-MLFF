@@ -5,17 +5,12 @@ Machine learning force field for gold hydride nanoclusters
 
 ```
 .
-├── MLFF-OTC-4-Model/
 ├── Initial-Optimized-Geometries/
 ├── Training/
 └── Testing/
 ```
 
-### `MLFF-OTC-4-Model/`
-The final trained machine learning force field (MLFF) model, consisting of three component files:
-- `lmp.flare`
-- `L_inv_lmp.flare`
-- `sparse_desc_lmp.flare`
+> ⚠️ **Note:** The trained MLFF model (`MLFF-OTC-4-Model/`) is archived on OSF: **[OSF Repository](https://osf.io/58emp/overview?view_only=8a98b807cf5742a1a25b44badea07e1a)**
 
 ### `Initial-Optimized-Geometries/`
 ADF optimization input files and optimized structures for all gold-hydride nanoclusters.
